@@ -11,6 +11,10 @@ html {
   line-height: 1.5; /* this is a multiple of the font size (1.5 * 16px = 24px) */
 }
 
+h1, p{
+  margin-left: 10px;
+}
+
 body {
   height: 2000px;
 }
@@ -28,21 +32,43 @@ body {
 }
 
 .red {
+  position: absolute;
+  top: 50px;
+  right: 100px;
   background-color: pink;
+  z-index: 3;
+
 }
 
 .green {
+  position: absolute;
+  top: 50px;
+  right: 50%;
   background-color: lightgreen;
 }
 
 .blue {
+  position: relative;
+  top: 50px;
+  left:200px;
   background-color: lightblue;
+  z-index: 2;
 }
 
 .orange {
+  position: absolute;
+  top: 75%;
+  left: 25%;
   background-color: orange;
 }
 
 .yellow {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
   background-color: yellow;
+}
+body{
+  margin: 0px;
 }
