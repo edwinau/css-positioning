@@ -16,7 +16,10 @@ body {
 }
 
 img {
-  max-width: 100%;
+  display: inline;
+  max-width: 40%;
+  float: left;
+  padding: 18px;
 }
 
 figure {
@@ -24,6 +27,41 @@ figure {
 }
 
 .film {
-  width: 50%;
-  margin: 40px auto;
+  position: relative;
+  width: 650px;
+  margin: 55px;
+  border: 1px solid lightgrey;
+  overflow: auto;
+}
+
+.film-poster{
+  text-align: left;
+}
+
+p.film-description {
+  box-sizing: content-box;
+  padding-right: 29px;
+  height: 270px;
+}
+
+.fa-2x {
+  display: block;
+  float: right;
+  position: absolute;
+  color: red;
+  top: 20px;
+  right: 408px;
+  z-index: 5;
+}
+.action-like{
+  color: red;
+  float: right;
+  margin: 10px;
+}
+
+.action-watch-later{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  float: left;
 }
